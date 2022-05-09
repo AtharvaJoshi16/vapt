@@ -1,13 +1,287 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,500&family=Jost:wght@300&display=swap');
+.subdDiv{
+  margin-top: 120px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color: gainsboro;
+    width: 1000px;
+    max-height:480px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 4px;
+    white-space: pre-line;
+    overflow-y: scroll;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+.heading{
+  font-family: 'Jost', sans-serif;
+}
+
+.whois{
+    background-color: gainsboro;
+    min-width: 160px;
+    max-height: 680px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 4px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.files{
+  background-color: gainsboro;
+  min-width: 160px;
+  max-height: 480px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: visible;
+}
+
+.filetext{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px;
+}
+
+.vuln_inner{
+    margin-left: 60px;
+}
+
+.vulns{
+    margin-left: 20px;
+}
+
+.comments{
+    background-color: gainsboro;
+    min-width: 160px;
+    max-height: 480px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+  .larger {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+  }
+  .compname {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid grey;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .compname:focus{
+    outline: none;
+  }
+
+  .asset {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid grey;
+    margin-top: 15px;
+    margin-left: 37px;
+    margin-right: 5px;
+  }
+  .asset:focus{
+    outline: none;
+  }
+
+  .button {
+    background-color: #2f8047;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+  
+
+  table {
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    line-height: 15px;
+    border-collapse: collapse;
+    width: 95%;
+  }
+
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+  tr:nth-child(odd){background-color: #b8ccc8}
+
+  th {
+    background-color: #7ec3e0;    
+    color: black;
+  }
+
+  .subds{
+    width: 450px;
+  }
+
+  .ports{
+    width: 450px;
+  }
+
+  .navbar{
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .addButton {
+    border-radius: 100%;
+    border: None;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #2f8047;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 1.7%;
+    margin-left:20px ;
+    cursor: pointer;
+  }
+
+  .listofassets{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 17px;
+}
+
+  .assetsdiv{
+    min-height: 400px;
+    min-width: 90%;
+    max-height: fit-content;
+    max-width: fit-content;
+    background-color: #deeaee;
+    border-radius: 10px;
+    margin-top: 120px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 30px;
+  }
+
+  .getresults{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -9px;
+    background-color: white;
+    backdrop-filter: blur;
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .text1{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    margin: 15px;
+  }
+
+  .button1 {
+    background-color: #2f8047;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position:absolute;
+    margin-left: 35%;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .scan{
+    background-color: #2f8047;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position:absolute;
+    margin-left: 860px;
+    margin-top: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .assetsdiv-login{
+    padding: 30px;
+    background-color: #e0dada;
+    width: 500px;
+    min-height: 200px;
+    border-radius: 5px;
+  }
+
+  .lastscan {
+    font-style: italic;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    margin-left: 600px;
+    margin-top: 25px;
+    position: absolute;
+  }
+
+  .subdDiv1{
+    margin-left: 280px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
